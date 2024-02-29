@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layouts/layout_admin}">
+
+<th:block layout:fragment="css">
+
+</th:block>
+
+  <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              스토어 물품 등록
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">홈페이지 관리</a></li>
+                <li class="breadcrumb-item active" aria-current="page">스토어 물품 등록</li>
+              </ol>
+            </nav>
+          </div>
+      <!--     <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="exampleInputName1">제목</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="제목">
+                    </div> -->
+
+                    <!-- 내용 에디터 
+                    <div class="form-group">
+                       <label for="exampleInputName1">내용</label> 
+                      <div id="content"></div> 
+                    </div>
+                   <label for="exampleTextarea1">내용</label>
+                      <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>-->
+                    
+
+                  
+                      <div class="col-12 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">스토어 물품 등록</h4>
+                            <p class="card-description">
+                             
+                            </p>
+                            <form class="forms-sample">
+                              <div class="form-group">
+                                <label for="exampleInputName1">상품이름</label>
+                                <input type="text" class="form-control" id="exampleInputName1" placeholder="상품명을 입력해주세요">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail3">상품 설명</label>
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="상품설명을 입력해주세요">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword4">상품가격</label>
+                                <input type="password" class="form-control" id="exampleInputPassword4" placeholder="상품가격을 입력해주세요">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword4">상품재고</label>
+                                <input type="password" class="form-control" id="exampleInputPassword4" placeholder="상품재고를 입력해주세요">
+                              </div>
+                             <!--  <div class="form-group">
+                                <label for="exampleSelectGender">Gender</label>
+                                  <select class="form-control" id="exampleSelectGender">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                  </select>
+                                </div> -->
+                              <div class="form-group">
+                                <label>사진 업로드</label>
+                                <input type="file" name="img[]" class="file-upload-default" multiple>
+                                <div class="input-group col-xs-12">
+                                  <input type="text" class="form-control file-upload-info" disabled placeholder="상품 이미지를 올려주세요" multiple>
+                                  <span class="input-group-append">
+                                    <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                                  </span>
+                                </div>
+                              </div>
+                          <!--     <div class="form-group">
+                                <label for="exampleInputCity1">City</label>
+                                <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+                              </div> -->
+                             <!--  <div class="form-group">
+                                <label for="exampleTextarea1">Textarea</label>
+                                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                              </div> -->
+                              <button type="submit" class="btn btn-gradient-primary mr-2">등록</button>
+                              <button class="btn btn-light">취소</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                    <!-- <div class="form-group">
+                      <label for="eventstart">시작일</label><p>
+                      <input type="datetime-local" id="eventstart" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                        value="2024-02-20T12:30"></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="eventend">종료일</label><p>
+                      <input type="datetime-local" id="eventend" max="2040-12-31T23:59" min="2024-02-20T12:30"
+                        value="2024-02-20T12:30"></p>
+                    </div> -->
+
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+<th:block layout:fragment="script">
+
+ </script>
+</th:block>
+</body>
+
+</html>

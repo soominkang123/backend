@@ -1,0 +1,26 @@
+ /* faq 스타일 */
+	.search-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search_wrap {
+        width: 100%; /* 검색창 전체 너비를 사용하기 위해 100%로 설정 */
+		
+        align-items: flex-start;
+    }
+
+    .search_wrap input {
+        width: 380px; /* 검색어 입력창 크기 조절 */
+        margin-right: 10px; /* 검색어 입력창과 검색 버튼 사이 간격 조절 */
+    }
+
+    .btn_col2 {
+        width: 70px; /* 검색 버튼 크기 조절 */
+		
+    }
+
+    .txt_help_wrap {
+        margin-top: 5px; /* 1:1문의 바로가기와 텍스트 도움말 사이 간격 조절 */
+    }

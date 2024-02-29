@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout_user1}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/header_sticky.css}" />
+	<link rel="stylesheet" th:href="@{/css/header_white.css}" />
+	<link rel="stylesheet" th:href="@{/css/footer.css}" />
+	<link rel="stylesheet" th:href="@{/css/notice.css}" />
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/MYCSS.css}" />
+	<link rel="stylesheet" th:href="@{/css/faq.css}" />
+</th:block>
+
+<div layout:fragment="content">
+
+		<!-- 작업시작지점 -->
+	<div id="center_menu">
+		<div class="top-section">
+			<div class="customer-service">고객센터</div>
+			<hr class="line" />
+		</div>
+
+		<div class="buttons">
+			<button style="z-index: 500;" onclick="window.location.href='/faq'">
+				<span>FAQ</span>
+			</button>
+			<button style="z-index: 500;">
+				<span>공지사항</span>
+				<div class="notice-buttons" style="z-index: 500;">
+					<span>전체공지</span> <span>영화관공지</span>
+				</div>
+			</button>
+			<button style="z-index: 500;"
+				onclick="window.location.href='/inquiry'">
+				<span>1:1문의</span>
+			</button>
+			<button style="z-index: 500;">
+				<span>분실물 문의</span>
+			</button>
+		</div>
+		<!-- 1:1문의 바로가기와 추가 정보를 포함한 div 추가 -->
+		<div id="board-search" class="search-section">
+			<div class="container">
+				<!-- 검색 창 -->
+				<fieldset class="search_wrap ty2">
+					<legend></legend>
+					<input type="text" placeholder="검색어를 입력해주세요." id="searchKeyword"
+						title="검색어를 입력해주세요">
+					<button type="submit" class="btn btn-dark">검색</button>
+					<!-- 1:1문의 바로가기와 추가 정보를 함께 묶음 -->
+					<div class="txt_help_wrap">
+						<!-- 1:1문의 바로가기 링크 -->
+						<a href="/customerservice/inquiry">1:1문의 바로가기</a>
+						<!-- "더 궁금한 점이 있거나, 이미 문의한 내용과 답변을 확인하려면?" 문구 -->
+						<p>더 궁금한 점이 있거나, 이미 문의한 내용과 답변을 확인하려면?</p>
+						<!-- 여기에 추가적인 문구나 링크 등을 원하는 대로 추가 -->
+					</div>
+				</fieldset>
+			</div>
+		</div>
+
+
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button" type="button"
+					data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+					aria-expanded="false" aria-controls="collapseTwo">
+					<span>영화관 이용</span> <span class="question"
+						onclick="toggleAnswer(this)"> <i
+						class="fa fa-question-circle" aria-hidden="true"></i> 소방/경찰 할인은
+						어떻게 받나요?
+					</span>
+				</button>
+			</h2>
+			<div id="collapseTwo" class="accordion-collapse collapse"
+				aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+				<div class="accordion-body">
+					<i class="fa fa-slack" aria-hidden="true"></i> 소방/경찰 할인에 관한 답변 내용
+				</div>
+			</div>
+		</div>
+		<!-- Add more accordion items as needed -->
+	</div>
+</div>
+
+<!-- 부트스트랩 및 팝퍼 및 자바스크립트 추가 -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+	function toggleAnswer(element) {
+		// 클릭 이벤트가 부트스트랩 아코디언에 영향을 주지 않도록 이벤트 전파를 막습니다.
+		event.stopPropagation();
+
+		// 추가적인 토글 로직이 필요한 경우 여기에 추가
+	}
+</script>
+
+
+<div class="pagination">
+	<div class="page-item">
+		<a href="#" class="page-link"><i class="fa fa-angle-left"
+			aria-hidden="true"></i></a>
+	</div>
+	<div class="page-item">
+		<a href="#" class="page-link">1</a>
+	</div>
+	<div class="page-item">
+		<a href="#" class="page-link">2</a>
+	</div>
+	<div class="page-item">
+		<a href="#" class="page-link"><i class="fa fa-angle-right"
+			aria-hidden="true"></i></a>
+	</div>
+</div>
+
+<!-- 부트스트랩 JS 및 jQuery를 추가하면 동작할 수 있습니다. -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- Modal end -->
+<th:block layout:fragment="script">
+
+
+</th:block>
+</html>

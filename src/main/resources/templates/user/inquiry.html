@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout_user1}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/header_sticky.css}" />
+	<link rel="stylesheet" th:href="@{/css/header_white.css}" />
+	<link rel="stylesheet" th:href="@{/css/footer.css}" />
+	<link rel="stylesheet" th:href="@{/css/notice.css}" />
+	<link rel="stylesheet" th:href="@{/css/MYCSS.css}" />
+
+</th:block>
+
+
+<div layout:fragment="content">
+
+	<div id="center_menu">
+		<div class="top-section">
+			<div class="customer-service">고객센터</div>
+			<hr class="line" />
+		</div>
+
+		<div class="buttons">
+			<button>
+				<span>FAQ</span>
+			</button>
+			<button>
+				<span>공지사항</span>
+				<div class="notice-buttons">
+					<span>전체공지</span> <span>영화관공지</span>
+				</div>
+			</button>
+			<button>
+				<span>1:1문의</span>
+			</button>
+			<button>
+				<span>분실물 문의</span>
+			</button>
+		</div>
+	</div>
+	<!-- Shop Login -->
+	<section class="shop login section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="login-form">
+						<h2>1대1문의</h2>
+						<p>고객확인</p>
+						<!-- Form -->
+						<form class="form" method="post" action="#">
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<label>이름<span>*</span></label> <input type="text" name="name"
+											placeholder="" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>이메일<span>*</span></label> <input type="text"
+											name="email" placeholder="" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>비밀번호<span>*</span></label> <input type="password"
+											name="password" placeholder="" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>연락처<span>*</span></label> <input type="password"
+											name="password" placeholder="" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>제목<span>*</span></label> <input type="password"
+											name="password" placeholder="" required="required">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>문의내용<span>*</span></label>
+										<textarea class="ty2" cols="10" rows="10" id="iDcontents"
+											title="문의내용을 입력해주세요"
+											placeholder="내용 및 첨부파일에 개인정보(카드번호, 계좌번호, 주민번호)가 포함되지 않도록 유의하여 입력해주세요."></textarea>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group login-btn">
+									<button type="submit" class="btn btn-dark">등록</button>
+									<button type="submit" class="btn btn-dark">취소</button>
+
+								</div>
+								<!-- <div class="checkbox">
+											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Sign Up for Newsletter</label>
+										</div> 
+									-->
+							</div>
+					  </div>
+					</form>
+					<!--/ End Form -->
+				</div>
+			</div>
+		</div>
+   </div>
+</section>
+<!--/ End Login -->
+<!-- Modal end -->
+</div>
+
+
+
+<th:block layout:fragment="script">
+
+
+</th:block>
+</html>

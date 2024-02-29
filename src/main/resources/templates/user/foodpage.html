@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout_user1}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/header_sticky.css}" />
+	<link rel="stylesheet" th:href="@{/css/header_white.css}" />
+	<link rel="stylesheet" th:href="@{/css/footer.css}" />
+</th:block>
+
+
+<div layout:fragment="content">
+
+	<!-- foodmain 시작부분 -->
+
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bread-inner">
+						<ul class="bread-list">
+							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single_o.html">푸드게시판</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+
+	<!-- Start Blog Grid -->
+	<div class="blog-single shop-blog grid section">
+		<h2 style="text-align: center">스낵음료</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- 스낵 리스트 시작  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/113c4f562c6e4c9d94e973b590f594ab.jpg"
+									alt="#">
+								<div class="content">
+									<a href="/foodpage/snack_drink_detail" class="title">스위트 콤보</a>
+									<a href="/foodpage/snack_drink_detail" class="more-btn">오리지널L
+										+ 탄산음료M2</a> <br> <a href="/foodpage/snack_drink_detail"
+										class="title">10,000원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/16a8de961e454d09901de45a61385c33.jpg"
+									alt="#">
+								<div class="content">
+									<!-- 	<p class="date">22 July, 2020. Monday</p> -->
+									<a href="#" class="title">더블콤보</a> <a href="#" class="more-btn">오리지널팝콘M2
+										+ 탄산음료M2</a> <br> <a href="#" class="title">14,000원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/828d9b97f9cf43379b0b453929aa6274.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July, 2020. Monday</p> -->
+									<a href="#" class="title">콜라 M / L</a> <a href="#"
+										class="more-btn">콜라M/L</a> <br> <a href="#" class="title">3,000원/3,500원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/596615fa5efe4470bdeaf4c290412f53.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">콜라 L</p> -->
+									<a href="#" class="title">사이다 M / L</a> <a href="#"
+										class="more-btn">사이다M/L</a> <br> <a href="#"
+										class="title">3,000원/3,500원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/52703a86875f4e589879094bf68162aa.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July , 2020. Monday</p> -->
+									<a href="#" class="title">오리지널팝콘 M</a> <a href="#"
+										class="more-btn">오리지널팝콘M</a> <br> <a href="#"
+										class="title">5,000원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/3c27318663cf4813a386589a46f4780c.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July, 2020. Monday</p> -->
+									<a href="#" class="title">오리지널팝콘 L</a> <a href="#"
+										class="more-btn">오리지널팝콘L</a> <br> <a href="#"
+										class="title">5,500원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/7b47806ac4564aacb98dde81efac9306.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July , 2020. Monday</p> -->
+									<a href="#" class="title">카라멜팝콘 M</a> <a href="#"
+										class="more-btn">카라멜팝콘M</a> <br> <a href="#"
+										class="title">6,000원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/a69f6de1970d4c6e957111477ebbb8b3.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July, 2020. Monday</p> -->
+									<a href="#" class="title">카라멜팝콘 L</a> <a href="#"
+										class="more-btn">카라멜팝콘L</a> <br> <a href="#"
+										class="title">6,500원</a>
+								</div>
+							</div>
+							<!-- End Single Blog  -->
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Start Single Blog  -->
+							<div class="shop-single-blog">
+								<img
+									src="https://cf.lottecinema.co.kr//Media/WebAdmin/94cd7a50f3214776a802d88bdab75c70.jpg"
+									alt="#">
+								<div class="content">
+									<!-- <p class="date">22 July, 2020. Monday</p> -->
+									<a href="#" class="title">반반팝콘(오리저널/카라멜) L</a> <a href="#"
+										class="more-btn">반반팝콘(오리저널/카라멜)L</a> <br> <a href="#"
+										class="title">6,500원</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal end -->
+<th:block layout:fragment="script">
+
+
+</th:block>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<div th:fragment="notice> 
+
+<!-- 작업시작지점 -->
+	<div id="center_menu">
+		<div class="top-section">
+			<div class="customer-service">고객센터</div>
+			<hr class="line" />
+		</div>
+
+		<div class="buttons">
+			<button style="z-index: 500;" onclick="window.location.href='/FAQ'">
+				<span>FAQ</span>
+			</button>
+			<button style="z-index: 500;">
+				<span>공지사항</span>
+				<div class="notice-buttons" style="z-index: 500;">
+					<span>전체공지</span> <span>영화관공지</span>
+				</div>
+			</button>
+			<button style="z-index: 500;"
+				onclick="window.location.href='/inquiry'">
+				<span>1:1문의</span>
+			</button>
+			<button style="z-index: 500;">
+				<span>분실물 문의</span>
+			</button>
+		</div>

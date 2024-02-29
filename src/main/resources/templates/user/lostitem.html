@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout_user1}">
+
+<th:block layout:fragment="css">
+	<link rel="stylesheet" th:href="@{/css/header_sticky.css}" />
+	<link rel="stylesheet" th:href="@{/css/header_white.css}" />
+	<link rel="stylesheet" th:href="@{/css/footer.css}" />
+	<link rel="stylesheet" th:href="@{/css/notice.css}" />
+    <link rel="stylesheet" th:href="@{/css/MYCSS.css}" />
+</th:block>
+
+
+<div layout:fragment="content">
+
+<!-- 작업시작지점 -->
+		 <div class="content_wrap">
+		 <div id="center2222">
+			<div class="top-section">
+				<div class="customer-service">고객센터</div>
+				<hr class="line" />
+			  </div>
+      
+          <div class="buttons">
+            <button>
+              <span>FAQ</span>
+            </button>
+            <button>
+              <span>공지사항</span>
+              <div class="notice-buttons">
+                <span>전체공지</span>
+                <span>영화관공지</span>
+              </div>
+            </button>
+            <button>
+              <span>1:1문의</span>
+            </button>
+            <button>
+              <span>분실물 문의</span>
+            </button>
+          </div>
+      
+          <!-- board seach area -->
+          <div id="board-search">
+            <div class="container">
+                <div class="search-window">
+                    <form action="">
+                        <div class="search-wrap">
+                            <label for="search" class="blind">공지사항 내용 검색</label>
+                            <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                            <button type="submit" class="btn btn-dark">검색</button>
+                        </div>
+						
+                    </form>
+					<div class="help-link">
+                        <p>더 궁금한 점이 있거나, 이미 문의한 내용과 답변을 확인하려면?</p>
+                        <a href="#none" >1:1문의 바로가기</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>극장</th>
+              <th>제목</th>
+			  <th>접수상태</th>
+              <th>등록일</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>강남</td>
+              <td><a href="#none">강남 분실물</a></td>
+			  <td>미답변</td>
+              <td>2024-02-19</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>건대입구</td>
+              <td><a href="#none">건대 분실물</a></td>
+			  <td>답변</td>
+              <td>2024-02-20</td>
+            </tr>
+            <!-- 추가적인 게시물은 이어서 넣어주세요 -->
+          </tbody>
+        </table>
+      
+        <div class="pagination">
+            <div class="page-item">
+              <a href="#" class="page-link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">1</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">2</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+		</div>
+		</div>
+	</div>
+	<!-- Modal end -->
+ <th:block layout:fragment="script">
+    
+   
+</th:block>     
+ </html>     	
